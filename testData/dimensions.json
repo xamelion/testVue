@@ -1,6 +1,6 @@
 [{
   "name": "menu_type",
-  "front_name": "�������",
+  "front_name": "Линейка",
   "data_type": {
     "base_type": "enum",
     "additional_data": {
@@ -9,7 +9,7 @@
   }
 }, {
   "name": "current_target",
-  "front_name": "�����������",
+  "front_name": "Потребность",
   "data_type": {
     "base_type": "enum",
     "additional_data": {
@@ -18,7 +18,7 @@
   }
 }, {
   "name": "offer_type",
-  "front_name": "��� ������",
+  "front_name": "Тип оффера",
   "data_type": {
     "base_type": "enum",
     "additional_data": {
@@ -27,7 +27,7 @@
   }
 }, {
   "name": "city",
-  "front_name": "�����",
+  "front_name": "Город",
   "data_type": {
     "base_type": "enum",
     "additional_data": {
@@ -36,7 +36,7 @@
   }
 }, {
   "name": "activity_status",
-  "front_name": "��� ����������",
+  "front_name": "Вид активности",
   "data_type": {
     "base_type": "enum",
     "additional_data": {
@@ -45,14 +45,14 @@
   }
 }, {
   "name": "is_smartphone",
-  "front_name": "���������� - ��������",
+  "front_name": "Устройство - смартфон",
   "data_type": {
     "base_type": "boolean",
     "additional_data": null
   }
 }, {
   "name": "anti_facebook_version",
-  "front_name": "����-������� ������",
+  "front_name": "Анти-фейсбук версия",
   "data_type": {
     "base_type": "boolean",
     "additional_data": null

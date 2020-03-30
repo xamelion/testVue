@@ -1,19 +1,23 @@
 <template>
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
-     safasfasf
+     {{dimension}}
     </v-flex>
   </v-layout>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import { mapState } from 'vuex';
+import DimensionStore from '../store/dimensions'
+import ConfigsStore from '../store/configs'
 
 export default {
-  components: {
-    Logo,
-    VuetifyLogo
+ computed: {
+    ...mapState({
+      dimension: () => DimensionStore.dimension,
+      dimensions: () => DimensionStore.getDimensions,
+      configs: () => ConfigsStore.getConfigs,
+    })
   }
 }
 </script>

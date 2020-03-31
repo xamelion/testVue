@@ -72,14 +72,12 @@
   }],
   "children": [{
     "name": "TargetPlans",
-    "rules": {
-      "1": {
+    "rules": [{
         "filters": [],
         "parameters": {
           "title": "Выбери свою цель"
         }
-      }
-    },
+      }],
     "children": [{
       "name": "TargetPlansP1",
       "rules": [{

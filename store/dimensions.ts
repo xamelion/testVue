@@ -32,7 +32,9 @@ export interface Dimension {
 })
 export class DimensionsModuleStore extends VuexModule {
   private dimensions: Dimension[] = [];
-  private dimention: string = 'menu_type';
+  private dimention: string = 'current_target';
+  private base_type: string = 'enum';
+  private additional_data: string|boolean = 'p1';
 
   get dimension(): string {
     return this.dimention;
@@ -62,6 +64,10 @@ export class DimensionsModuleStore extends VuexModule {
   @Mutation
   setDimension(label: string) {
     this.dimention = label;
+    // Находим связанные данные
+    const selectedDimension: any = this.dimensions.find(v => v.name === label);
+    this.base_type = selectedDimension['data_type']['base_type'];
+    this.additional_data = this.base_type === 'enum' ? selectedDimension['data_type']['additional_data']['values'][0] : false;
   }
 
 

@@ -1,6 +1,7 @@
 # obalor
 
 > My peachy Nuxt.js project
+https://youtu.be/5lbAfoI9rS8 (Запись сборки)
 
 ## Build Setup
 
